@@ -8,8 +8,8 @@ services:
       - "443:443"
     volumes:
       - ./www:/app
-      - ./certs/rdas.vm.pem:/opt/docker/etc/nginx/ssl/server.crt
-      - ./certs/rdas.vm-key.pem:/opt/docker/etc/nginx/ssl/server.key
+      - ./certs/domain.vm.pem:/opt/docker/etc/nginx/ssl/server.crt
+      - ./certs/domain.vm-key.pem:/opt/docker/etc/nginx/ssl/server.key
   mysql:
     image: mysql:5.7
     # ports:
